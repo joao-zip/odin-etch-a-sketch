@@ -12,4 +12,11 @@ function makeGrid(size) {
 
 }
 
-makeGrid(32);
+
+
+let gridRange = document.getElementById("menu-range"); 
+gridRange.addEventListener('click', () => {
+    let value = gridRange.value;
+    makeGrid(value);
+    document.querySelector(".size").innerHTML = `Size: ${value} x ${value}`;
+})
