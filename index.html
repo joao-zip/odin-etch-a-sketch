@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <title>Etch-a-Sketch</title>
+    </head>
+    <body>
+        <header>
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <main>
+            <div class="menu">
+                <div class="menu-color">
+                    <span>Color: </span>
+                    <input id="color-selector" type="color">
+                </div>
+                <button id="menu-eraser" >Eraser</button>
+                <button id="menu-rainbow">Rainbow Mode</button>
+                <div class="menu-size">
+                    <span>Size: </span>
+                    <input id="menu-range" type="range" value="32" min="16" max="64">
+                </div>
+            </div>
+            <div class="grid-container"></div>
+        </main>
+        <footer>
+            <p>joao-zip &copy; The Odin Project - 2023</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
